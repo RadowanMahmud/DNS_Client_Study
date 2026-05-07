@@ -1,0 +1,647 @@
+;
+; BIND data file for local loopback interface
+;
+$TTL    0
+@       IN      SOA     ns1.dnsverify-test.com. admin.dnsverify-test.com. (
+                          28887         ; Serial
+                         604800         ; Refresh
+                          86400         ; Retry
+                        2419200         ; Expire
+                         604800 )       ; Negative Cache TTL
+;
+@       IN      NS      ns1.dnsverify-test.com.
+        IN      NS      ns2.dnsverify-test.com.
+ns1     IN      A       98.88.169.232
+ns2     IN      A       98.88.169.232
+
+@       IN      A       98.86.63.6
+@       IN      AAAA    2600:1f10:4252:bba:1abc:c74a:d59d:ab46
+
+
+
+
+;6____________________________________________________________________________________________________
+
+alias-6-1 IN HTTPS 0 .
+alias-6-1 IN HTTPS 1 . port="44301" ech="AEv+DQBHEgAgACDntWX0Okh6CR++LRH0TMO8Y7t6IfmOSkIPw8C277NFIwAEAAEAAQAYY292ZXIuZG5zdmVyaWZ5LXRlc3QuY29tAAA=" ipv6hint="2600:1f10:4252:b27:b1dd:289f:5bff:4219"
+
+;____________________________________________________________________________________________________
+
+
+
+;8____________________________________________________________________________________________________
+
+alias-8-1 IN HTTPS 0 .
+alias-8-1 IN HTTPS 0 .
+alias-8-1 IN HTTPS 0 .
+alias-8-1 IN HTTPS 1 . port="44301" ech="AEv+DQBHEgAgACDntWX0Okh6CR++LRH0TMO8Y7t6IfmOSkIPw8C277NFIwAEAAEAAQAYY292ZXIuZG5zdmVyaWZ5LXRlc3QuY29tAAA=" ipv6hint="2600:1f10:4252:b27:b1dd:289f:5bff:4219"
+
+;____________________________________________________________________________________________________
+
+
+
+;19____________________________________________________________________________________________________
+
+alias-19-1 IN HTTPS 0 alias-19-2-1
+alias-19-1 IN HTTPS 1 . port="44301" ech="AEv+DQBHEgAgACDntWX0Okh6CR++LRH0TMO8Y7t6IfmOSkIPw8C277NFIwAEAAEAAQAYY292ZXIuZG5zdmVyaWZ5LXRlc3QuY29tAAA=" ipv6hint="2600:1f10:4252:b27:b1dd:289f:5bff:4219"
+alias-19-2-1   IN      A       98.94.170.53
+
+alias-19-2-1   IN      AAAA    2600:1f10:4252:b5a:4c92:71c6:ffb4:5908
+
+
+alias-19-2-1 IN HTTPS 0 dnsverify-test.com
+
+;____________________________________________________________________________________________________
+
+
+
+;20____________________________________________________________________________________________________
+
+alias-20-1 IN HTTPS 0 alias-20-2-1
+alias-20-1 IN HTTPS 1 . port="44301" ech="AEv+DQBHEgAgACDntWX0Okh6CR++LRH0TMO8Y7t6IfmOSkIPw8C277NFIwAEAAEAAQAYY292ZXIuZG5zdmVyaWZ5LXRlc3QuY29tAAA=" ipv6hint="2600:1f10:4252:b27:b1dd:289f:5bff:4219"
+alias-20-2-1   IN      A       98.94.170.53
+
+alias-20-2-1   IN      AAAA    2600:1f10:4252:b5a:4c92:71c6:ffb4:5908
+
+
+alias-20-2-1 IN HTTPS 0 dnsverify-test.com
+
+;____________________________________________________________________________________________________
+
+
+
+;21____________________________________________________________________________________________________
+
+alias-21-1 IN HTTPS 0 alias-21-1-svc-1
+alias-21-1 IN HTTPS 1 . port="44301" ech="AEv+DQBHEgAgACDntWX0Okh6CR++LRH0TMO8Y7t6IfmOSkIPw8C277NFIwAEAAEAAQAYY292ZXIuZG5zdmVyaWZ5LXRlc3QuY29tAAA=" ipv6hint="2600:1f10:4252:b27:b1dd:289f:5bff:4219"
+alias-21-1-svc-1   IN      A       98.94.170.53
+
+alias-21-1-svc-1   IN      AAAA    2600:1f10:4252:b5a:4c92:71c6:ffb4:5908
+
+
+alias-21-1-svc-1 IN A 44.195.96.182
+alias-21-1-svc-1 IN AAAA 2600:1f10:4252:b27:b1dd:289f:5bff:4219
+alias-21-1-svc-1 IN HTTPS 1 subalias-21-1-svc-1. alpn="h3" port=44301 ipv4hint=98.90.175.10 ipv6hint=2600:1f10:4252:b7e:b642:87d0:41bb:fbe0
+
+;____________________________________________________________________________________________________
+
+
+
+;22____________________________________________________________________________________________________
+
+alias-22-1 IN HTTPS 0 alias-22-2-1
+alias-22-2-1   IN      A       98.94.170.53
+
+alias-22-2-1   IN      AAAA    2600:1f10:4252:b5a:4c92:71c6:ffb4:5908
+
+
+alias-22-1 IN HTTPS 0 alias-22-2-2
+alias-22-2-2   IN      A       98.94.170.53
+
+alias-22-2-2   IN      AAAA    2600:1f10:4252:b5a:4c92:71c6:ffb4:5908
+
+
+alias-22-1 IN HTTPS 0 alias-22-2-3
+alias-22-2-3   IN      A       98.94.170.53
+
+alias-22-2-3   IN      AAAA    2600:1f10:4252:b5a:4c92:71c6:ffb4:5908
+
+
+alias-22-1 IN HTTPS 1 . port="44301" ech="AEv+DQBHEgAgACDntWX0Okh6CR++LRH0TMO8Y7t6IfmOSkIPw8C277NFIwAEAAEAAQAYY292ZXIuZG5zdmVyaWZ5LXRlc3QuY29tAAA=" ipv6hint="2600:1f10:4252:b27:b1dd:289f:5bff:4219"
+alias-22-2-1 IN HTTPS 0 dnsverify-test.com
+alias-22-2-2 IN HTTPS 0 dnsverify-test.com
+alias-22-2-3 IN HTTPS 0 dnsverify-test.com
+
+;____________________________________________________________________________________________________
+
+
+
+;23____________________________________________________________________________________________________
+
+alias-23-1 IN HTTPS 0 alias-23-2-1
+alias-23-2-1   IN      A       98.94.170.53
+
+alias-23-2-1   IN      AAAA    2600:1f10:4252:b5a:4c92:71c6:ffb4:5908
+
+
+alias-23-1 IN HTTPS 0 alias-23-2-2
+alias-23-2-2   IN      A       98.94.170.53
+
+alias-23-2-2   IN      AAAA    2600:1f10:4252:b5a:4c92:71c6:ffb4:5908
+
+
+alias-23-1 IN HTTPS 0 alias-23-2-3
+alias-23-2-3   IN      A       98.94.170.53
+
+alias-23-2-3   IN      AAAA    2600:1f10:4252:b5a:4c92:71c6:ffb4:5908
+
+
+alias-23-1 IN HTTPS 1 . port="44301" ech="AEv+DQBHEgAgACDntWX0Okh6CR++LRH0TMO8Y7t6IfmOSkIPw8C277NFIwAEAAEAAQAYY292ZXIuZG5zdmVyaWZ5LXRlc3QuY29tAAA=" ipv6hint="2600:1f10:4252:b27:b1dd:289f:5bff:4219"
+alias-23-2-1 IN HTTPS 0 dnsverify-test.com
+alias-23-2-2 IN HTTPS 0 dnsverify-test.com
+alias-23-2-3 IN HTTPS 0 dnsverify-test.com
+
+;____________________________________________________________________________________________________
+
+
+
+;24____________________________________________________________________________________________________
+
+alias-24-1 IN HTTPS 0 alias-24-2-1
+alias-24-2-1   IN      A       98.94.170.53
+
+alias-24-2-1   IN      AAAA    2600:1f10:4252:b5a:4c92:71c6:ffb4:5908
+
+
+alias-24-1 IN HTTPS 0 alias-24-2-2
+alias-24-2-2   IN      A       98.94.170.53
+
+alias-24-2-2   IN      AAAA    2600:1f10:4252:b5a:4c92:71c6:ffb4:5908
+
+
+alias-24-1 IN HTTPS 0 alias-24-2-3
+alias-24-2-3   IN      A       98.94.170.53
+
+alias-24-2-3   IN      AAAA    2600:1f10:4252:b5a:4c92:71c6:ffb4:5908
+
+
+alias-24-1 IN HTTPS 1 . port="44301" ech="AEv+DQBHEgAgACDntWX0Okh6CR++LRH0TMO8Y7t6IfmOSkIPw8C277NFIwAEAAEAAQAYY292ZXIuZG5zdmVyaWZ5LXRlc3QuY29tAAA=" ipv6hint="2600:1f10:4252:b27:b1dd:289f:5bff:4219"
+alias-24-2-1 IN A 44.195.96.182
+alias-24-2-1 IN AAAA 2600:1f10:4252:b27:b1dd:289f:5bff:4219
+alias-24-2-1 IN HTTPS 1 subalias-24-2-1. alpn="h3" port=44301 ipv4hint=98.90.175.10 ipv6hint=2600:1f10:4252:b7e:b642:87d0:41bb:fbe0
+alias-24-2-2 IN A 44.195.96.182
+alias-24-2-2 IN AAAA 2600:1f10:4252:b27:b1dd:289f:5bff:4219
+alias-24-2-2 IN HTTPS 1 subalias-24-2-2. alpn="h3" port=44301 ipv4hint=98.90.175.10 ipv6hint=2600:1f10:4252:b7e:b642:87d0:41bb:fbe0
+alias-24-2-3 IN A 44.195.96.182
+alias-24-2-3 IN AAAA 2600:1f10:4252:b27:b1dd:289f:5bff:4219
+alias-24-2-3 IN HTTPS 1 subalias-24-2-3. alpn="h3" port=44301 ipv4hint=98.90.175.10 ipv6hint=2600:1f10:4252:b7e:b642:87d0:41bb:fbe0
+
+;____________________________________________________________________________________________________
+
+
+
+;38____________________________________________________________________________________________________
+
+alias-38-1 IN HTTPS 0 alias-38-2-1
+alias-38-2-1   IN      A       98.94.170.53
+
+alias-38-2-1   IN      AAAA    2600:1f10:4252:b5a:4c92:71c6:ffb4:5908
+
+
+alias-38-1 IN HTTPS 0 .
+alias-38-1 IN HTTPS 0 .
+alias-38-1 IN HTTPS 1 . port="44301" ech="AEv+DQBHEgAgACDntWX0Okh6CR++LRH0TMO8Y7t6IfmOSkIPw8C277NFIwAEAAEAAQAYY292ZXIuZG5zdmVyaWZ5LXRlc3QuY29tAAA=" ipv6hint="2600:1f10:4252:b27:b1dd:289f:5bff:4219"
+alias-38-2-1 IN HTTPS 0 dnsverify-test.com
+
+;____________________________________________________________________________________________________
+
+
+
+;39____________________________________________________________________________________________________
+
+alias-39-1 IN HTTPS 0 alias-39-2-1
+alias-39-2-1   IN      A       98.94.170.53
+
+alias-39-2-1   IN      AAAA    2600:1f10:4252:b5a:4c92:71c6:ffb4:5908
+
+
+alias-39-1 IN HTTPS 0 .
+alias-39-1 IN HTTPS 0 .
+alias-39-1 IN HTTPS 1 . port="44301" ech="AEv+DQBHEgAgACDntWX0Okh6CR++LRH0TMO8Y7t6IfmOSkIPw8C277NFIwAEAAEAAQAYY292ZXIuZG5zdmVyaWZ5LXRlc3QuY29tAAA=" ipv6hint="2600:1f10:4252:b27:b1dd:289f:5bff:4219"
+alias-39-2-1 IN HTTPS 0 dnsverify-test.com
+
+;____________________________________________________________________________________________________
+
+
+
+;40____________________________________________________________________________________________________
+
+alias-40-1 IN HTTPS 0 alias-40-2-1
+alias-40-2-1   IN      A       98.94.170.53
+
+alias-40-2-1   IN      AAAA    2600:1f10:4252:b5a:4c92:71c6:ffb4:5908
+
+
+alias-40-1 IN HTTPS 0 .
+alias-40-1 IN HTTPS 0 .
+alias-40-1 IN HTTPS 1 . port="44301" ech="AEv+DQBHEgAgACDntWX0Okh6CR++LRH0TMO8Y7t6IfmOSkIPw8C277NFIwAEAAEAAQAYY292ZXIuZG5zdmVyaWZ5LXRlc3QuY29tAAA=" ipv6hint="2600:1f10:4252:b27:b1dd:289f:5bff:4219"
+alias-40-2-1 IN A 44.195.96.182
+alias-40-2-1 IN AAAA 2600:1f10:4252:b27:b1dd:289f:5bff:4219
+alias-40-2-1 IN HTTPS 1 subalias-40-2-1. alpn="h3" port=44301 ipv4hint=98.90.175.10 ipv6hint=2600:1f10:4252:b7e:b642:87d0:41bb:fbe0
+
+;____________________________________________________________________________________________________
+
+
+
+;53____________________________________________________________________________________________________
+
+alias-53-1 IN HTTPS 0 alias-53-2-1
+alias-53-1 IN HTTPS 1 . port="44301" ech="AEv+DQBHEgAgACDntWX0Okh6CR++LRH0TMO8Y7t6IfmOSkIPw8C277NFIwAEAAEAAQAYY292ZXIuZG5zdmVyaWZ5LXRlc3QuY29tAAA=" ipv6hint="2600:1f10:4252:b27:b1dd:289f:5bff:4219"
+alias-53-2-1   IN      A       98.94.170.53
+
+alias-53-2-1   IN      AAAA    2600:1f10:4252:b5a:4c92:71c6:ffb4:5908
+
+
+alias-53-2-1 IN HTTPS 0 .
+alias-53-2-1 IN HTTPS 1 . port="44301" ech="AEv+DQBHEgAgACDntWX0Okh6CR++LRH0TMO8Y7t6IfmOSkIPw8C277NFIwAEAAEAAQAYY292ZXIuZG5zdmVyaWZ5LXRlc3QuY29tAAA=" ipv6hint="2600:1f10:4252:b27:b1dd:289f:5bff:4219"
+
+;____________________________________________________________________________________________________
+
+
+
+;54____________________________________________________________________________________________________
+
+alias-54-1 IN HTTPS 0 alias-54-2-1
+alias-54-1 IN HTTPS 0 alias-54-2-2
+alias-54-1 IN HTTPS 0 alias-54-2-3
+alias-54-1 IN HTTPS 1 . port="44301" ech="AEv+DQBHEgAgACDntWX0Okh6CR++LRH0TMO8Y7t6IfmOSkIPw8C277NFIwAEAAEAAQAYY292ZXIuZG5zdmVyaWZ5LXRlc3QuY29tAAA=" ipv6hint="2600:1f10:4252:b27:b1dd:289f:5bff:4219"
+alias-54-2-1 IN HTTPS 0 .
+alias-54-2-1 IN HTTPS 1 . port="44301" ech="AEv+DQBHEgAgACDntWX0Okh6CR++LRH0TMO8Y7t6IfmOSkIPw8C277NFIwAEAAEAAQAYY292ZXIuZG5zdmVyaWZ5LXRlc3QuY29tAAA=" ipv6hint="2600:1f10:4252:b27:b1dd:289f:5bff:4219"
+alias-54-2-2 IN HTTPS 0 .
+alias-54-2-2 IN HTTPS 1 . port="44301" ech="AEv+DQBHEgAgACDntWX0Okh6CR++LRH0TMO8Y7t6IfmOSkIPw8C277NFIwAEAAEAAQAYY292ZXIuZG5zdmVyaWZ5LXRlc3QuY29tAAA=" ipv6hint="2600:1f10:4252:b27:b1dd:289f:5bff:4219"
+alias-54-2-3 IN HTTPS 0 .
+alias-54-2-3 IN HTTPS 1 . port="44301" ech="AEv+DQBHEgAgACDntWX0Okh6CR++LRH0TMO8Y7t6IfmOSkIPw8C277NFIwAEAAEAAQAYY292ZXIuZG5zdmVyaWZ5LXRlc3QuY29tAAA=" ipv6hint="2600:1f10:4252:b27:b1dd:289f:5bff:4219"
+
+;____________________________________________________________________________________________________
+
+
+
+;86____________________________________________________________________________________________________
+
+alias-86-1 IN HTTPS 0 alias-86-2-1
+alias-86-1 IN HTTPS 1 . port="44301" ech="AEv+DQBHEgAgACDntWX0Okh6CR++LRH0TMO8Y7t6IfmOSkIPw8C277NFIwAEAAEAAQAYY292ZXIuZG5zdmVyaWZ5LXRlc3QuY29tAAA=" ipv6hint="2600:1f10:4252:b27:b1dd:289f:5bff:4219"
+alias-86-2-1   IN      A       98.94.170.53
+
+alias-86-2-1   IN      AAAA    2600:1f10:4252:b5a:4c92:71c6:ffb4:5908
+
+
+alias-86-2-1 IN HTTPS 0 alias-86-3-1
+alias-86-2-1 IN HTTPS 1 . port="44301" ech="AEv+DQBHEgAgACDntWX0Okh6CR++LRH0TMO8Y7t6IfmOSkIPw8C277NFIwAEAAEAAQAYY292ZXIuZG5zdmVyaWZ5LXRlc3QuY29tAAA=" ipv6hint="2600:1f10:4252:b27:b1dd:289f:5bff:4219"
+alias-86-3-1   IN      A       98.94.170.53
+
+alias-86-3-1   IN      AAAA    2600:1f10:4252:b5a:4c92:71c6:ffb4:5908
+
+
+alias-86-3-1 IN HTTPS 0 dnsverify-test.com
+
+;____________________________________________________________________________________________________
+
+
+
+;87____________________________________________________________________________________________________
+
+alias-87-1 IN HTTPS 0 alias-87-2-1
+alias-87-1 IN HTTPS 1 . port="44301" ech="AEv+DQBHEgAgACDntWX0Okh6CR++LRH0TMO8Y7t6IfmOSkIPw8C277NFIwAEAAEAAQAYY292ZXIuZG5zdmVyaWZ5LXRlc3QuY29tAAA=" ipv6hint="2600:1f10:4252:b27:b1dd:289f:5bff:4219"
+alias-87-2-1   IN      A       98.94.170.53
+
+alias-87-2-1   IN      AAAA    2600:1f10:4252:b5a:4c92:71c6:ffb4:5908
+
+
+alias-87-2-1 IN HTTPS 0 alias-87-3-1
+alias-87-3-1   IN      A       98.94.170.53
+
+alias-87-3-1   IN      AAAA    2600:1f10:4252:b5a:4c92:71c6:ffb4:5908
+
+
+alias-87-2-1 IN HTTPS 0 alias-87-3-2
+alias-87-3-2   IN      A       98.94.170.53
+
+alias-87-3-2   IN      AAAA    2600:1f10:4252:b5a:4c92:71c6:ffb4:5908
+
+
+alias-87-2-1 IN HTTPS 0 alias-87-3-3
+alias-87-3-3   IN      A       98.94.170.53
+
+alias-87-3-3   IN      AAAA    2600:1f10:4252:b5a:4c92:71c6:ffb4:5908
+
+
+alias-87-2-1 IN HTTPS 1 . port="44301" ech="AEv+DQBHEgAgACDntWX0Okh6CR++LRH0TMO8Y7t6IfmOSkIPw8C277NFIwAEAAEAAQAYY292ZXIuZG5zdmVyaWZ5LXRlc3QuY29tAAA=" ipv6hint="2600:1f10:4252:b27:b1dd:289f:5bff:4219"
+alias-87-3-1 IN HTTPS 0 dnsverify-test.com
+alias-87-3-2 IN HTTPS 0 dnsverify-test.com
+alias-87-3-3 IN HTTPS 0 dnsverify-test.com
+
+;____________________________________________________________________________________________________
+
+
+
+;88____________________________________________________________________________________________________
+
+alias-88-1 IN HTTPS 0 alias-88-2-1
+alias-88-1 IN HTTPS 1 . port="44301" ech="AEv+DQBHEgAgACDntWX0Okh6CR++LRH0TMO8Y7t6IfmOSkIPw8C277NFIwAEAAEAAQAYY292ZXIuZG5zdmVyaWZ5LXRlc3QuY29tAAA=" ipv6hint="2600:1f10:4252:b27:b1dd:289f:5bff:4219"
+alias-88-2-1   IN      A       98.94.170.53
+
+alias-88-2-1   IN      AAAA    2600:1f10:4252:b5a:4c92:71c6:ffb4:5908
+
+
+alias-88-2-1 IN HTTPS 0 .
+alias-88-2-1 IN HTTPS 0 .
+alias-88-2-1 IN HTTPS 0 .
+alias-88-2-1 IN HTTPS 1 . port="44301" ech="AEv+DQBHEgAgACDntWX0Okh6CR++LRH0TMO8Y7t6IfmOSkIPw8C277NFIwAEAAEAAQAYY292ZXIuZG5zdmVyaWZ5LXRlc3QuY29tAAA=" ipv6hint="2600:1f10:4252:b27:b1dd:289f:5bff:4219"
+
+;____________________________________________________________________________________________________
+
+
+
+;89____________________________________________________________________________________________________
+
+alias-89-1 IN HTTPS 0 alias-89-2-1
+alias-89-1 IN HTTPS 0 alias-89-2-2
+alias-89-1 IN HTTPS 0 alias-89-2-3
+alias-89-1 IN HTTPS 1 . port="44301" ech="AEv+DQBHEgAgACDntWX0Okh6CR++LRH0TMO8Y7t6IfmOSkIPw8C277NFIwAEAAEAAQAYY292ZXIuZG5zdmVyaWZ5LXRlc3QuY29tAAA=" ipv6hint="2600:1f10:4252:b27:b1dd:289f:5bff:4219"
+alias-89-2-1 IN HTTPS 0 alias-89-3-1
+alias-89-2-1 IN HTTPS 1 . port="44301" ech="AEv+DQBHEgAgACDntWX0Okh6CR++LRH0TMO8Y7t6IfmOSkIPw8C277NFIwAEAAEAAQAYY292ZXIuZG5zdmVyaWZ5LXRlc3QuY29tAAA=" ipv6hint="2600:1f10:4252:b27:b1dd:289f:5bff:4219"
+alias-89-3-1   IN      A       98.94.170.53
+
+alias-89-3-1   IN      AAAA    2600:1f10:4252:b5a:4c92:71c6:ffb4:5908
+
+
+alias-89-2-2 IN HTTPS 0 alias-89-3-2
+alias-89-2-2 IN HTTPS 1 . port="44301" ech="AEv+DQBHEgAgACDntWX0Okh6CR++LRH0TMO8Y7t6IfmOSkIPw8C277NFIwAEAAEAAQAYY292ZXIuZG5zdmVyaWZ5LXRlc3QuY29tAAA=" ipv6hint="2600:1f10:4252:b27:b1dd:289f:5bff:4219"
+alias-89-3-2   IN      A       98.94.170.53
+
+alias-89-3-2   IN      AAAA    2600:1f10:4252:b5a:4c92:71c6:ffb4:5908
+
+
+alias-89-2-3 IN HTTPS 0 alias-89-3-3
+alias-89-2-3 IN HTTPS 1 . port="44301" ech="AEv+DQBHEgAgACDntWX0Okh6CR++LRH0TMO8Y7t6IfmOSkIPw8C277NFIwAEAAEAAQAYY292ZXIuZG5zdmVyaWZ5LXRlc3QuY29tAAA=" ipv6hint="2600:1f10:4252:b27:b1dd:289f:5bff:4219"
+alias-89-3-3   IN      A       98.94.170.53
+
+alias-89-3-3   IN      AAAA    2600:1f10:4252:b5a:4c92:71c6:ffb4:5908
+
+
+alias-89-3-1 IN HTTPS 0 dnsverify-test.com
+alias-89-3-2 IN HTTPS 0 dnsverify-test.com
+alias-89-3-3 IN HTTPS 0 dnsverify-test.com
+
+;____________________________________________________________________________________________________
+
+
+
+;90____________________________________________________________________________________________________
+
+alias-90-1 IN HTTPS 0 alias-90-2-1
+alias-90-1 IN HTTPS 0 alias-90-2-2
+alias-90-1 IN HTTPS 0 alias-90-2-3
+alias-90-1 IN HTTPS 1 . port="44301" ech="AEv+DQBHEgAgACDntWX0Okh6CR++LRH0TMO8Y7t6IfmOSkIPw8C277NFIwAEAAEAAQAYY292ZXIuZG5zdmVyaWZ5LXRlc3QuY29tAAA=" ipv6hint="2600:1f10:4252:b27:b1dd:289f:5bff:4219"
+alias-90-2-1 IN HTTPS 0 alias-90-3-1
+alias-90-3-1   IN      A       98.94.170.53
+
+alias-90-3-1   IN      AAAA    2600:1f10:4252:b5a:4c92:71c6:ffb4:5908
+
+
+alias-90-2-1 IN HTTPS 0 alias-90-3-2
+alias-90-3-2   IN      A       98.94.170.53
+
+alias-90-3-2   IN      AAAA    2600:1f10:4252:b5a:4c92:71c6:ffb4:5908
+
+
+alias-90-2-1 IN HTTPS 0 alias-90-3-3
+alias-90-3-3   IN      A       98.94.170.53
+
+alias-90-3-3   IN      AAAA    2600:1f10:4252:b5a:4c92:71c6:ffb4:5908
+
+
+alias-90-2-1 IN HTTPS 1 . port="44301" ech="AEv+DQBHEgAgACDntWX0Okh6CR++LRH0TMO8Y7t6IfmOSkIPw8C277NFIwAEAAEAAQAYY292ZXIuZG5zdmVyaWZ5LXRlc3QuY29tAAA=" ipv6hint="2600:1f10:4252:b27:b1dd:289f:5bff:4219"
+alias-90-2-2 IN HTTPS 0 alias-90-3-4
+alias-90-3-4   IN      A       98.94.170.53
+
+alias-90-3-4   IN      AAAA    2600:1f10:4252:b5a:4c92:71c6:ffb4:5908
+
+
+alias-90-2-2 IN HTTPS 0 alias-90-3-5
+alias-90-3-5   IN      A       98.94.170.53
+
+alias-90-3-5   IN      AAAA    2600:1f10:4252:b5a:4c92:71c6:ffb4:5908
+
+
+alias-90-2-2 IN HTTPS 0 alias-90-3-6
+alias-90-3-6   IN      A       98.94.170.53
+
+alias-90-3-6   IN      AAAA    2600:1f10:4252:b5a:4c92:71c6:ffb4:5908
+
+
+alias-90-2-2 IN HTTPS 1 . port="44301" ech="AEv+DQBHEgAgACDntWX0Okh6CR++LRH0TMO8Y7t6IfmOSkIPw8C277NFIwAEAAEAAQAYY292ZXIuZG5zdmVyaWZ5LXRlc3QuY29tAAA=" ipv6hint="2600:1f10:4252:b27:b1dd:289f:5bff:4219"
+alias-90-2-3 IN HTTPS 0 alias-90-3-7
+alias-90-3-7   IN      A       98.94.170.53
+
+alias-90-3-7   IN      AAAA    2600:1f10:4252:b5a:4c92:71c6:ffb4:5908
+
+
+alias-90-2-3 IN HTTPS 0 alias-90-3-8
+alias-90-3-8   IN      A       98.94.170.53
+
+alias-90-3-8   IN      AAAA    2600:1f10:4252:b5a:4c92:71c6:ffb4:5908
+
+
+alias-90-2-3 IN HTTPS 0 alias-90-3-9
+alias-90-3-9   IN      A       98.94.170.53
+
+alias-90-3-9   IN      AAAA    2600:1f10:4252:b5a:4c92:71c6:ffb4:5908
+
+
+alias-90-2-3 IN HTTPS 1 . port="44301" ech="AEv+DQBHEgAgACDntWX0Okh6CR++LRH0TMO8Y7t6IfmOSkIPw8C277NFIwAEAAEAAQAYY292ZXIuZG5zdmVyaWZ5LXRlc3QuY29tAAA=" ipv6hint="2600:1f10:4252:b27:b1dd:289f:5bff:4219"
+alias-90-3-1 IN HTTPS 0 dnsverify-test.com
+alias-90-3-2 IN HTTPS 0 dnsverify-test.com
+alias-90-3-3 IN HTTPS 0 dnsverify-test.com
+alias-90-3-4 IN HTTPS 0 dnsverify-test.com
+alias-90-3-5 IN HTTPS 0 dnsverify-test.com
+alias-90-3-6 IN HTTPS 0 dnsverify-test.com
+alias-90-3-7 IN HTTPS 0 dnsverify-test.com
+alias-90-3-8 IN HTTPS 0 dnsverify-test.com
+alias-90-3-9 IN HTTPS 0 dnsverify-test.com
+
+;____________________________________________________________________________________________________
+
+
+
+;91____________________________________________________________________________________________________
+
+alias-91-1 IN HTTPS 0 alias-91-2-1
+alias-91-1 IN HTTPS 0 alias-91-2-2
+alias-91-1 IN HTTPS 0 alias-91-2-3
+alias-91-1 IN HTTPS 1 . port="44301" ech="AEv+DQBHEgAgACDntWX0Okh6CR++LRH0TMO8Y7t6IfmOSkIPw8C277NFIwAEAAEAAQAYY292ZXIuZG5zdmVyaWZ5LXRlc3QuY29tAAA=" ipv6hint="2600:1f10:4252:b27:b1dd:289f:5bff:4219"
+alias-91-2-1 IN HTTPS 0 .
+alias-91-2-1 IN HTTPS 0 .
+alias-91-2-1 IN HTTPS 0 .
+alias-91-2-1 IN HTTPS 1 . port="44301" ech="AEv+DQBHEgAgACDntWX0Okh6CR++LRH0TMO8Y7t6IfmOSkIPw8C277NFIwAEAAEAAQAYY292ZXIuZG5zdmVyaWZ5LXRlc3QuY29tAAA=" ipv6hint="2600:1f10:4252:b27:b1dd:289f:5bff:4219"
+alias-91-2-2 IN HTTPS 0 .
+alias-91-2-2 IN HTTPS 0 .
+alias-91-2-2 IN HTTPS 0 .
+alias-91-2-2 IN HTTPS 1 . port="44301" ech="AEv+DQBHEgAgACDntWX0Okh6CR++LRH0TMO8Y7t6IfmOSkIPw8C277NFIwAEAAEAAQAYY292ZXIuZG5zdmVyaWZ5LXRlc3QuY29tAAA=" ipv6hint="2600:1f10:4252:b27:b1dd:289f:5bff:4219"
+alias-91-2-3 IN HTTPS 0 .
+alias-91-2-3 IN HTTPS 0 .
+alias-91-2-3 IN HTTPS 0 .
+alias-91-2-3 IN HTTPS 1 . port="44301" ech="AEv+DQBHEgAgACDntWX0Okh6CR++LRH0TMO8Y7t6IfmOSkIPw8C277NFIwAEAAEAAQAYY292ZXIuZG5zdmVyaWZ5LXRlc3QuY29tAAA=" ipv6hint="2600:1f10:4252:b27:b1dd:289f:5bff:4219"
+
+;____________________________________________________________________________________________________
+
+
+
+;92____________________________________________________________________________________________________
+
+alias-92-1 IN HTTPS 0 alias-92-2-1
+alias-92-1 IN HTTPS 0 .
+alias-92-1 IN HTTPS 0 .
+alias-92-1 IN HTTPS 1 . port="44301" ech="AEv+DQBHEgAgACDntWX0Okh6CR++LRH0TMO8Y7t6IfmOSkIPw8C277NFIwAEAAEAAQAYY292ZXIuZG5zdmVyaWZ5LXRlc3QuY29tAAA=" ipv6hint="2600:1f10:4252:b27:b1dd:289f:5bff:4219"
+alias-92-2-1 IN HTTPS 0 .
+alias-92-2-1 IN HTTPS 1 . port="44301" ech="AEv+DQBHEgAgACDntWX0Okh6CR++LRH0TMO8Y7t6IfmOSkIPw8C277NFIwAEAAEAAQAYY292ZXIuZG5zdmVyaWZ5LXRlc3QuY29tAAA=" ipv6hint="2600:1f10:4252:b27:b1dd:289f:5bff:4219"
+
+;____________________________________________________________________________________________________
+
+
+
+;128____________________________________________________________________________________________________
+
+alias-128-1 IN HTTPS 0 alias-128-2-1
+alias-128-1 IN HTTPS 1 . port="44301" ech="AEv+DQBHEgAgACDntWX0Okh6CR++LRH0TMO8Y7t6IfmOSkIPw8C277NFIwAEAAEAAQAYY292ZXIuZG5zdmVyaWZ5LXRlc3QuY29tAAA=" ipv6hint="2600:1f10:4252:b27:b1dd:289f:5bff:4219"
+alias-128-2-1   IN      A       98.94.170.53
+
+alias-128-2-1   IN      AAAA    2600:1f10:4252:b5a:4c92:71c6:ffb4:5908
+
+
+alias-128-2-1 IN HTTPS 0 alias-128-3-1
+alias-128-3-1   IN      A       98.94.170.53
+
+alias-128-3-1   IN      AAAA    2600:1f10:4252:b5a:4c92:71c6:ffb4:5908
+
+
+alias-128-2-1 IN HTTPS 0 .
+alias-128-2-1 IN HTTPS 0 .
+alias-128-2-1 IN HTTPS 1 . port="44301" ech="AEv+DQBHEgAgACDntWX0Okh6CR++LRH0TMO8Y7t6IfmOSkIPw8C277NFIwAEAAEAAQAYY292ZXIuZG5zdmVyaWZ5LXRlc3QuY29tAAA=" ipv6hint="2600:1f10:4252:b27:b1dd:289f:5bff:4219"
+alias-128-3-1 IN HTTPS 0 dnsverify-test.com
+
+;____________________________________________________________________________________________________
+
+
+
+;129____________________________________________________________________________________________________
+
+alias-129-1 IN HTTPS 0 alias-129-2-1
+alias-129-1 IN HTTPS 0 alias-129-2-2
+alias-129-1 IN HTTPS 0 alias-129-2-3
+alias-129-1 IN HTTPS 1 . port="44301" ech="AEv+DQBHEgAgACDntWX0Okh6CR++LRH0TMO8Y7t6IfmOSkIPw8C277NFIwAEAAEAAQAYY292ZXIuZG5zdmVyaWZ5LXRlc3QuY29tAAA=" ipv6hint="2600:1f10:4252:b27:b1dd:289f:5bff:4219"
+alias-129-2-1 IN HTTPS 0 alias-129-3-1
+alias-129-3-1   IN      A       98.94.170.53
+
+alias-129-3-1   IN      AAAA    2600:1f10:4252:b5a:4c92:71c6:ffb4:5908
+
+
+alias-129-2-1 IN HTTPS 0 .
+alias-129-2-1 IN HTTPS 0 .
+alias-129-2-1 IN HTTPS 1 . port="44301" ech="AEv+DQBHEgAgACDntWX0Okh6CR++LRH0TMO8Y7t6IfmOSkIPw8C277NFIwAEAAEAAQAYY292ZXIuZG5zdmVyaWZ5LXRlc3QuY29tAAA=" ipv6hint="2600:1f10:4252:b27:b1dd:289f:5bff:4219"
+alias-129-2-2 IN HTTPS 0 alias-129-3-2
+alias-129-3-2   IN      A       98.94.170.53
+
+alias-129-3-2   IN      AAAA    2600:1f10:4252:b5a:4c92:71c6:ffb4:5908
+
+
+alias-129-2-2 IN HTTPS 0 .
+alias-129-2-2 IN HTTPS 0 .
+alias-129-2-2 IN HTTPS 1 . port="44301" ech="AEv+DQBHEgAgACDntWX0Okh6CR++LRH0TMO8Y7t6IfmOSkIPw8C277NFIwAEAAEAAQAYY292ZXIuZG5zdmVyaWZ5LXRlc3QuY29tAAA=" ipv6hint="2600:1f10:4252:b27:b1dd:289f:5bff:4219"
+alias-129-2-3 IN HTTPS 0 alias-129-3-3
+alias-129-3-3   IN      A       98.94.170.53
+
+alias-129-3-3   IN      AAAA    2600:1f10:4252:b5a:4c92:71c6:ffb4:5908
+
+
+alias-129-2-3 IN HTTPS 0 .
+alias-129-2-3 IN HTTPS 0 .
+alias-129-2-3 IN HTTPS 1 . port="44301" ech="AEv+DQBHEgAgACDntWX0Okh6CR++LRH0TMO8Y7t6IfmOSkIPw8C277NFIwAEAAEAAQAYY292ZXIuZG5zdmVyaWZ5LXRlc3QuY29tAAA=" ipv6hint="2600:1f10:4252:b27:b1dd:289f:5bff:4219"
+alias-129-3-1 IN HTTPS 0 dnsverify-test.com
+alias-129-3-2 IN HTTPS 0 dnsverify-test.com
+alias-129-3-3 IN HTTPS 0 dnsverify-test.com
+
+;____________________________________________________________________________________________________
+
+
+
+;130____________________________________________________________________________________________________
+
+alias-130-1 IN HTTPS 0 alias-130-2-1
+alias-130-1 IN HTTPS 0 .
+alias-130-1 IN HTTPS 0 .
+alias-130-1 IN HTTPS 1 . port="44301" ech="AEv+DQBHEgAgACDntWX0Okh6CR++LRH0TMO8Y7t6IfmOSkIPw8C277NFIwAEAAEAAQAYY292ZXIuZG5zdmVyaWZ5LXRlc3QuY29tAAA=" ipv6hint="2600:1f10:4252:b27:b1dd:289f:5bff:4219"
+alias-130-2-1 IN HTTPS 0 alias-130-3-1
+alias-130-2-1 IN HTTPS 1 . port="44301" ech="AEv+DQBHEgAgACDntWX0Okh6CR++LRH0TMO8Y7t6IfmOSkIPw8C277NFIwAEAAEAAQAYY292ZXIuZG5zdmVyaWZ5LXRlc3QuY29tAAA=" ipv6hint="2600:1f10:4252:b27:b1dd:289f:5bff:4219"
+alias-130-3-1   IN      A       98.94.170.53
+
+alias-130-3-1   IN      AAAA    2600:1f10:4252:b5a:4c92:71c6:ffb4:5908
+
+
+alias-130-3-1 IN HTTPS 0 dnsverify-test.com
+
+;____________________________________________________________________________________________________
+
+
+
+;131____________________________________________________________________________________________________
+
+alias-131-1 IN HTTPS 0 alias-131-2-1
+alias-131-1 IN HTTPS 0 .
+alias-131-1 IN HTTPS 0 .
+alias-131-1 IN HTTPS 1 . port="44301" ech="AEv+DQBHEgAgACDntWX0Okh6CR++LRH0TMO8Y7t6IfmOSkIPw8C277NFIwAEAAEAAQAYY292ZXIuZG5zdmVyaWZ5LXRlc3QuY29tAAA=" ipv6hint="2600:1f10:4252:b27:b1dd:289f:5bff:4219"
+alias-131-2-1 IN HTTPS 0 alias-131-3-1
+alias-131-3-1   IN      A       98.94.170.53
+
+alias-131-3-1   IN      AAAA    2600:1f10:4252:b5a:4c92:71c6:ffb4:5908
+
+
+alias-131-2-1 IN HTTPS 0 alias-131-3-2
+alias-131-3-2   IN      A       98.94.170.53
+
+alias-131-3-2   IN      AAAA    2600:1f10:4252:b5a:4c92:71c6:ffb4:5908
+
+
+alias-131-2-1 IN HTTPS 0 alias-131-3-3
+alias-131-3-3   IN      A       98.94.170.53
+
+alias-131-3-3   IN      AAAA    2600:1f10:4252:b5a:4c92:71c6:ffb4:5908
+
+
+alias-131-2-1 IN HTTPS 1 . port="44301" ech="AEv+DQBHEgAgACDntWX0Okh6CR++LRH0TMO8Y7t6IfmOSkIPw8C277NFIwAEAAEAAQAYY292ZXIuZG5zdmVyaWZ5LXRlc3QuY29tAAA=" ipv6hint="2600:1f10:4252:b27:b1dd:289f:5bff:4219"
+alias-131-3-1 IN HTTPS 0 dnsverify-test.com
+alias-131-3-2 IN HTTPS 0 dnsverify-test.com
+alias-131-3-3 IN HTTPS 0 dnsverify-test.com
+
+;____________________________________________________________________________________________________
+
+
+
+;132____________________________________________________________________________________________________
+
+alias-132-1 IN HTTPS 0 alias-132-2-1
+alias-132-1 IN HTTPS 0 .
+alias-132-1 IN HTTPS 0 .
+alias-132-1 IN HTTPS 1 . port="44301" ech="AEv+DQBHEgAgACDntWX0Okh6CR++LRH0TMO8Y7t6IfmOSkIPw8C277NFIwAEAAEAAQAYY292ZXIuZG5zdmVyaWZ5LXRlc3QuY29tAAA=" ipv6hint="2600:1f10:4252:b27:b1dd:289f:5bff:4219"
+alias-132-2-1 IN HTTPS 0 .
+alias-132-2-1 IN HTTPS 0 .
+alias-132-2-1 IN HTTPS 0 .
+alias-132-2-1 IN HTTPS 1 . port="44301" ech="AEv+DQBHEgAgACDntWX0Okh6CR++LRH0TMO8Y7t6IfmOSkIPw8C277NFIwAEAAEAAQAYY292ZXIuZG5zdmVyaWZ5LXRlc3QuY29tAAA=" ipv6hint="2600:1f10:4252:b27:b1dd:289f:5bff:4219"
+
+;____________________________________________________________________________________________________
+
+
+
+;182____________________________________________________________________________________________________
+
+alias-182-1 IN HTTPS 0 alias-182-2-1
+alias-182-1 IN HTTPS 0 .
+alias-182-1 IN HTTPS 0 .
+alias-182-1 IN HTTPS 1 . port="44301" ech="AEv+DQBHEgAgACDntWX0Okh6CR++LRH0TMO8Y7t6IfmOSkIPw8C277NFIwAEAAEAAQAYY292ZXIuZG5zdmVyaWZ5LXRlc3QuY29tAAA=" ipv6hint="2600:1f10:4252:b27:b1dd:289f:5bff:4219"
+alias-182-2-1 IN HTTPS 0 alias-182-3-1
+alias-182-3-1   IN      A       98.94.170.53
+
+alias-182-3-1   IN      AAAA    2600:1f10:4252:b5a:4c92:71c6:ffb4:5908
+
+
+alias-182-2-1 IN HTTPS 0 .
+alias-182-2-1 IN HTTPS 0 .
+alias-182-2-1 IN HTTPS 1 . port="44301" ech="AEv+DQBHEgAgACDntWX0Okh6CR++LRH0TMO8Y7t6IfmOSkIPw8C277NFIwAEAAEAAQAYY292ZXIuZG5zdmVyaWZ5LXRlc3QuY29tAAA=" ipv6hint="2600:1f10:4252:b27:b1dd:289f:5bff:4219"
+alias-182-3-1 IN HTTPS 0 dnsverify-test.com
+
+;____________________________________________________________________________________________________
+
+
+
+
+
